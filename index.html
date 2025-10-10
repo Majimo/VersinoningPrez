@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css" />
+    <!-- <link rel="stylesheet" href="/node_modules/highlight.js/styles/github.css" /> -->
+    <link rel="stylesheet" href="styles.css"></link>
+    <title>Le Versioning</title>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides parchemin">
+
+        <!-- Title Slide -->
+        <section class="no-blur">
+            <div class="cv titre">
+                <div class="item">
+                    <h1>Le Versioning</h1>
+                    <h2>Git, GitHub, GitLab</h2>
+                </div>
+                <div class="item">
+                    <p class="p-titre">Pierre FERVEL</p>
+                    <p class="p-titre">Max Digital Services</p>
+                </div>
+            </div>
+            <aside class="notes">
+                Introduction du formateur et de la formation.
+            </aside>
+        </section>
+
+        <!-- Git GitHub Historic -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Pourquoi le versionning est apparu</h2>
+                        <p>
+                            Avant Git, la gestion des versions était souvent centralisée, peu efficace, et plusieurs problèmes se posaient:
+                        </p>
+                        <ul>
+                            <li>Risque de perte de travail.</li>
+                            <li>Difficulté à collaborer et à gérer les conflits.</li>
+                            <li>Manque d’outils pour revenir aux versions antérieures facilement.</li>
+                        </ul>
+                        <p>
+                            Le versioning est apparu pour répondre à ces besoins, améliorer la collaboration et sécuriser le code.
+                        </p>
+                        <p>
+                            En 2005, <em>Linus Torvalds</em> crée Git, un système de gestion de version distribué performant et robuste, suite à la fin de l’utilisation de BitKeeper.
+                        </p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Explication du contexte historique du versionning et de ses causes.
+                </aside>
+            </section>
+        </section>
+
+        <!-- GitLab -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>GitLab : histoire et positionnement</h2>
+                        <p>
+                            GitLab est créé en 2011 par <em>Dmitriy Zaporozhets</em> et <em>Valery Sizov</em> comme une alternative open-source à GitHub.
+                        </p>
+                        <p>
+                            GitLab se distingue par son intégration complète des outils DevOps, notamment CI/CD natif, et par la possibilité d’auto-hébergement.
+                        </p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Explication du contexte historique du versionning et de ses causes.
+                </aside>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h3>Comparatif GitHub / GitLab</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Aspect</th>
+                                    <th>GitHub</th>
+                                    <th>GitLab</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Philosophie</td>
+                                    <td>Propriétaire sous Microsoft</td>
+                                    <td>Open source, auto-hébergement possible</td>
+                                </tr>
+                                <tr>
+                                    <td>Hébergement</td>
+                                    <td>Cloud uniquement</td>
+                                    <td>Cloud ou serveurs privés</td>
+                                </tr>
+                                <tr>
+                                    <td>CI/CD</td>
+                                    <td>Souvent via outils externes</td>
+                                    <td>Intégré natif</td>
+                                </tr>
+                                <tr>
+                                    <td>Workflow</td>
+                                    <td>GitHub Flow basé sur Pull Request</td>
+                                    <td>Branches multiples et gestion avancée</td>
+                                </tr>
+                                <tr>
+                                    <td>DevOps</td>
+                                    <td>Pas natif</td>
+                                    <td>Kubernetes et outils DevOps natifs</td>
+                                </tr>
+                                <tr>
+                                    <td>Communauté Open Source</td>
+                                    <td>Majoritairement propriétaire</td>
+                                    <td>Code 100% public</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            GitLab se démarque par sa flexibilité et son modèle communautaire, tandis que GitHub reste le leader du social coding et de la visibilité open source.
+                        </p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Souligner la complémentarité des deux plateformes et leur évolution dans l’écosystème DevOps.
+                </aside>
+            </section>
+        </section>
+
+        <!-- Install Git et création compte GitHub -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Installation de Git et création de compte GitHub</h2>
+                        <h3>Installer Git sur Windows</h3>
+                        <ol>
+                            <li>Télécharger Git depuis <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
+                            <li>Lancer l’installateur, garder les options par défaut</li>
+                            <li>Ouvrir Git Bash et vérifier l’installation : <code>git --version</code></li>
+                            <li>Configurer votre nom et email pour Git :
+                                <pre><code>git config --global user.name "Votre Nom"
+git config --global user.email "votre.email@example.com"</code></pre>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Insister sur la configuration ID dès le début pour éviter les erreurs dans les commits.
+                </aside>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h3>Créer un compte GitHub</h3>
+                        <ol>
+                            <li>Aller sur <a href="https://github.com">https://github.com</a> et cliquer sur « Sign up »</li>
+                            <li>Entrer un email valide, un mot de passe, un nom d’utilisateur</li>
+                            <li>Valider le compte via l’email reçu</li>
+                        </ol>
+                        <p><em>Votre compte GitHub sera votre identité</em> dans la communauté open source.</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Insister sur la configuration ID dès le début pour éviter les erreurs dans les commits.
+                </aside>
+            </section>
+        </section>
+
+        <!-- Git Bases -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Les bases de Git</h2>
+                        <p>Git est un système décentralisé qui permet de créer des snapshots de votre travail.</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Insister sur la configuration ID dès le début pour éviter les erreurs dans les commits.
+                </aside>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h3>Concepts clés</h3>
+                        <ul>
+                            <li>Repository (dépôt) : lieu où est stocké le code et son historique.</li>
+                            <li>Commit : snapshot, point dans le temps avec un message description.</li>
+                            <li>Branch (branche) : version parallèle pour travailler sur une fonctionnalité.</li>
+                            <li>Merge : réunion de deux branches en une seule.</li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Insister sur la configuration ID dès le début pour éviter les erreurs dans les commits.
+                </aside>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h3>Commandes principales</h3>
+                        <ul>
+                            <li><code>git init</code> : créer un dépôt.</li>
+                            <li><code>git add</code> : préparer les fichiers pour le commit.</li>
+                            <li><code>git commit -m "message"</code> : enregistrer les modifications.</li>
+                            <li><code>git status</code> : afficher l’état du dépôt.</li>
+                            <li><code>git log</code> : afficher l’historique des commits.</li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Introduire la philosophie décentralisée et les commandes essentielles.
+                </aside>
+            </section>
+        </section>
+
+        <!-- TP01: Create Repo -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>TP01 : Créer un dépôt Git et le pousser sur GitHub</h2>
+                        <ol>
+                            <li>Créer un nouveau dossier local.</li>
+                            <li>Initialiser un dépôt avec <code>git init</code>.</li>
+                            <li>Créer un fichier <code>README.md</code> avec une description du projet.</li>
+                            <li>Créer un projet web rapide. Ajouter les fichiers avec <code>git add .</code>.</li>
+                            <li>Faire un commit initial avec <code>git commit -m "Initial commit"</code>.</li>
+                            <li>Créer un dépôt distant sur GitHub.</li>
+                            <li>Relier le dépôt local au dépôt distant : <code>git remote add origin URL_DU_DEPO</code>.</li>
+                            <li>Envoyer les commits sur GitHub : <code>git push -u origin main</code>. (<em>Bonus: Que signifie ce <code>-u</code> ?</em>)</li>
+                            <li>Rappeler dans ce fichier <code>README.md</code> ce que sont les repositories, les commits, les branches et les merges.</li>
+                            <li>Créer un nouveau commit avec un nom de commit parlant</li>
+                            <li>Envoyer le nouveau commit sur GitHub (<em>Bonus: Quelle commande rapide avez-vous utilisée ?</em>)</li>
+                            <li>Vérifier la présence des fichiers sur GitHub.</li>
+                            <li>Envoyer moi vos liens vers vos dépôts GitHub.</li>
+                        </ol>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Bien expliquer la liaison local/distant et les commandes push.
+                </aside>
+            </section>
+        </section>
+
+        <!-- Branching -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Le branching dans Git</h2>
+                        <p>Les branches permettent de travailler sur des fonctionnalités indépendantes sans impacter la branche principale.</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Insister sur la configuration ID dès le début pour éviter les erreurs dans les commits.
+                </aside>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h3>Commandes utiles</h3>
+                        <ul>
+                            <li><code>git branch</code> : liste les branches.</li>
+                            <li><code>git branch nom_branche</code> : créer une nouvelle branche.</li>
+                            <li><code>git checkout nom_branche</code> : basculer sur une branche.</li>
+                            <li><code>git merge nom_branche</code> : fusionner une branche dans la branche courante.</li>
+                        </ul>
+                        <p>Les branches facilitent la collaboration et la gestion de versions.</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Insister sur les bons usages du branching.
+                </aside>
+            </section>
+        </section>
+
+        <!-- Git Rebase vs Git Merge -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Git Rebase vs Git Merge</h2>
+                        <p>
+                            <strong>Merge</strong> crée un commit spécial qui fusionne deux branches, conservant l’historique entier.
+                        </p>
+                        <p>
+                            <strong>Rebase</strong> réapplique les commits d’une branche par-dessus une autre, produisant un historique linéaire et plus propre.
+                        </p>
+                        <h3>Avantages et inconvénients</h3>
+                        <ul>
+                            <li><strong>Merge</strong>: Historique complet, mais conflits plus visibles.</li>
+                            <li><strong>Rebase</strong>: Historique plus lisible, mais possible perte de contexte.</li>
+                        </ul>
+                        <p>Choisir selon le contexte et la politique d’équipe.</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Présenter clairement les différences pour faire le bon choix.
+                </aside>
+            </section>
+        </section>
+
+        <!-- TP02: Git Branching -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>TP02 : Branching Git</h2>
+                        <ol>
+                            <li>Créer une nouvelle branche avec <code>git branch feature_x</code>.</li>
+                            <li>Basculer dessus avec <code>git checkout feature_x</code>.</li>
+                            <li>Faire des modifications sur votre projet web, puis committer.</li>
+                            <li>Revenir à la branche principale <code>git checkout main</code>.</li>
+                            <li>Créer un tag de cette version : <code>git tag v1.0</code>. (<em>Bonus: Si vous voulez vous pouvez créer un tag annoté.</em>)</li>
+                            <li>Fusionner la branche : <code>git merge feature_x</code>.</li>
+                            <li>Supprimer la branche : <code>git branch -d feature_x</code>.</li>
+                            <li>Envoyer les changements sur GitHub. Quelle commande utilisez-vous ?</li>
+                            <li>Vérifier sur GitHub la présence du tag et des modifications.</li>
+                            <li>Envoyer moi vos liens vers vos dépôts GitHub.</li>
+                        </ol>
+                    </div>
+                </div>
+                <aside class="notes">
+                    <p>Cette pratique cible la collaboration et l’intégration continue.</p>
+                    <p>Encourager les étudiants à pratiquer le branching pour bien maîtriser Git.</p>
+                    <p>Créer un tag annoté de cette version <code>git tag -a v1.0 -m "Version 1.0 stable"</code></p>
+                    <p>Envoyer les changements sur GitHub : <code>git push origin main --tags</code>.</p>
+                </aside>
+            </section>
+        </section>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
