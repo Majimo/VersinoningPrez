@@ -31,6 +31,27 @@
             </aside>
         </section>
 
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <img src="./assets/moi.jpg" alt="Merci" style="height:700px;width:auto" />
+                    </div>
+                    <div class="item mes-infos">
+                        <p class="mon-nom">Pierre FERVEL</p>
+                        <p>Développeur Fullstack <span class="digital">Angular</span> / <span class="serv">Java</span></p>
+                        <p>Speaker (Max Digital Services, BreizhCamp, Devfest)</p>
+                        <p>Jammer en jeux vidéos</p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Ben toi quoi
+
+<p>Alors, enfilons notre chapeau d'archéologue du code, et partons à la découverte des trésors cachés d'Angular !</p>
+                </aside>
+            </section>
+        </section>
+
         <!-- Git GitHub Historic -->
         <section>
             <section class="inner-section">
@@ -44,7 +65,7 @@
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>Pourquoi le versionning est apparu</h2>
+                        <h2>👨‍🎓 Pourquoi le versionning est apparu</h2>
                         <p>
                             Avant Git, la gestion des versions était souvent centralisée, peu efficace, et plusieurs problèmes se posaient:
                         </p>
@@ -56,9 +77,19 @@
                         <p>
                             Le versioning est apparu pour répondre à ces besoins, améliorer la collaboration et sécuriser le code.
                         </p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Explication du contexte historique du versionning et de ses causes.
+                </aside>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
                         <p>
                             En 2005, <em>Linus Torvalds</em> crée Git, un système de gestion de version distribué performant et robuste, suite à la fin de l’utilisation de BitKeeper.
                         </p>
+                        <img src="./assets/Linus-Torvalds.webp" style="height: 45%;">
                     </div>
                 </div>
                 <aside class="notes">
@@ -73,16 +104,18 @@
                 <div class="ch">
                     <div class="item">
                         <h2>Le cas GitLab</h2>
+                        <img src="./assets/gitlab.png" alt="">
                     </div>
                 </div>
             </section>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>GitLab : histoire et positionnement</h2>
+                        <h2>🦊 GitLab : histoire et positionnement</h2>
                         <p>
                             GitLab est créé en 2011 par <em>Dmitriy Zaporozhets</em> et <em>Valery Sizov</em> comme une alternative open-source à GitHub.
                         </p>
+                        <img src="./assets/dimitri_valery.webp" style="height: 35%;">
                         <p>
                             GitLab se distingue par son intégration complète des outils DevOps, notamment CI/CD natif, et par la possibilité d’auto-hébergement.
                         </p>
@@ -95,7 +128,7 @@
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h3>Comparatif GitHub / GitLab</h3>
+                        <h3>🆚 Comparatif GitHub / GitLab</h3>
                         <table>
                             <thead>
                                 <tr>
@@ -161,11 +194,11 @@
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>Installation de Git et création de compte GitHub</h2>
+                        <h2>💻 Installation de Git et création de compte GitHub</h2>
                         <h3>Installer Git sur Windows</h3>
                         <ol>
                             <li>Télécharger Git depuis <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></li>
-                            <li>Lancer l’installateur, garder les options par défaut</li>
+                            <li>Lancer l’installateur, garder les options par défaut. <em>A l'exception de Nano, beaucoup plus abordable que Vim</em></li>
                             <li>Ouvrir Git Bash et vérifier l’installation : <code>git --version</code></li>
                             <li>Configurer votre nom et email pour Git :
                                 <pre><code>git config --global user.name "Votre Nom"
@@ -181,7 +214,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h3>Créer un compte GitHub</h3>
+                        <h3>🛜 Créer un compte GitHub</h3>
                         <ol>
                             <li>Aller sur <a href="https://github.com">https://github.com</a> et cliquer sur « Sign up »</li>
                             <li>Entrer un email valide, un mot de passe, un nom d’utilisateur</li>
@@ -209,7 +242,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>Les bases de Git</h2>
+                        <h2>1️⃣ Les bases de Git</h2>
                         <p>Git est un système décentralisé qui permet de créer des snapshots de votre travail.</p>
                     </div>
                 </div>
@@ -220,7 +253,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h3>Concepts clés</h3>
+                        <h3>🔑 Concepts clés</h3>
                         <ul>
                             <li>Repository (dépôt) : lieu où est stocké le code et son historique.</li>
                             <li>Commit : snapshot, point dans le temps avec un message description.</li>
@@ -236,7 +269,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h3>Commandes principales</h3>
+                        <h3>⌨️ Commandes principales</h3>
                         <ul>
                             <li><code>git init</code> : créer un dépôt.</li>
                             <li><code>git add</code> : préparer les fichiers pour le commit.</li>
@@ -264,7 +297,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>TP01 : Créer un dépôt Git et le pousser sur GitHub</h2>
+                        <h2>👨‍💻 TP01 : Créer un dépôt Git et le pousser sur GitHub</h2>
                         <ol>
                             <li>Créer un nouveau dossier local.</li>
                             <li>Initialiser un dépôt avec <code>git init</code>.</li>
@@ -284,6 +317,82 @@ git config --global user.email "votre.email@example.com"</code></pre>
             </section>
         </section>
 
+        <!-- Historique des branches -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Utiliser Git pour stocker du code à distance</h2>
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlkaDZpM2d3OTJzdW1tbTAxdWJkaWMyZWhkM3V4a3FuNms5a3RmcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zhbrTTpmSCYog/giphy.gif" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="inner-section"> 
+                <div class="ch"> 
+                    <div class="item"> 
+                        <h2>🏪 Dépôts locaux et distants</h2> 
+                        <p> <strong>GitHub</strong> permet de stocker et partager son code sur Internet, pour collaborer facilement en équipe. </p> 
+                        <ul> 
+                            <li>Un <strong>dépôt local</strong> est sur ton ordinateur.</li> 
+                            <li>Un <strong>dépôt distant</strong> est hébergé sur GitHub (ou GitLab, Bitbucket...)</li> 
+                        </ul> 
+                        <h3>Pourquoi synchroniser ?</h3> 
+                        <ul> 
+                            <li>Partager tes modifications</li> 
+                            <li>Accéder au code de l’équipe</li> 
+                            <li>Travailler de plusieurs ordinateurs</li> 
+                        </ul> 
+                    </div> 
+                </div> 
+                <aside class="notes"> Souligner la différence locale/distant, introduire la motivation de GitHub. </aside> 
+            </section> 
+            <section class="inner-section"> 
+                <div class="ch"> 
+                    <div class="item"> 
+                        <h2>⌨️ Commandes clés : lier et synchroniser</h2> 
+                        <p> <code>git remote add origin URL_DU_DEPOT</code> : Connecte ton dépôt local à GitHub. </p> 
+                        <p> <code>git push</code> : Envoie tes commits locaux vers GitHub.</p> 
+                        <p> <code>git pull</code> : Récupère les dernières modifications de GitHub.</p> 
+                        <div style="margin-top: 2em;"> 
+                            <h3>⚠️ Travailler toujours à jour pour éviter les conflits ! ⚠️</h3> 
+                        </div> 
+                    </div> 
+                </div> 
+                <aside class="notes"> Faire une démo en direct ou expliquer chaque commande avec un vrai cas d’usage. </aside> 
+            </section> 
+        </section>
+
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>TP</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>👨‍💻 TP02 : Création de votre dépôt Git</h2>
+                        <ol>
+                            <li>Créer un dépôt distant sur GitHub.</li>
+                            <li>Relier le dépôt local au dépôt distant.</li>
+                            <li>Tenter un <code>git push</code> pour envoyer les commits locaux. Que constatez-vous ?</li>
+                            <li>Envoyer les commits précédents sur GitHub : <code>git push -u origin main</code>. (<em>Bonus: Que signifie ce <code>-u</code> ?</em>)</li>
+                            <li>Vérifier sur GitHub la présence du projet et des modifications.</li>
+                            <li>Envoyer moi vos liens vers vos dépôts GitHub.</li>
+                        </ol>
+                    </div>
+                </div>
+                <aside class="notes">
+                    <p>Cette pratique cible la collaboration et l’intégration continue.</p>
+                    <p>Encourager les étudiants à pratiquer le branching pour bien maîtriser Git.</p>
+                    <p>Créer un tag annoté de cette version <code>git tag -a v1.0 -m "Version 1.0 stable"</code></p>
+                    <p>Envoyer les changements sur GitHub : <code>git push origin main --tags</code>.</p>
+                </aside>
+            </section>
+        </section>
+
         <!-- Branching -->
         <section>
             <section class="inner-section">
@@ -297,7 +406,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>Le branching dans Git</h2>
+                        <h2>🌲 Le branching dans Git</h2>
                         <p>Les branches permettent de travailler sur des fonctionnalités indépendantes sans impacter la branche principale.</p>
                     </div>
                 </div>
@@ -308,7 +417,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h3>Commandes utiles</h3>
+                        <h3>⌨️ Commandes utiles</h3>
                         <ul>
                             <li><code>git branch</code> : liste les branches.</li>
                             <li><code>git branch nom_branche</code> : créer une nouvelle branche.</li>
@@ -337,7 +446,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>Git Rebase vs Git Merge</h2>
+                        <h2>🆚 Git Rebase vs Git Merge</h2>
                         <p>
                             <strong>Merge</strong> crée un commit spécial qui fusionne deux branches, conservant l’historique entier.
                         </p>
@@ -370,18 +479,15 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
-                        <h2>TP02 : Branching Git</h2>
+                        <h2>👨‍💻 TP03 : Branching Git</h2>
                         <ol>
-                            <li>Créer une nouvelle branche avec <code>git branch feature_x</code>.</li>
-                            <li>Basculer dessus avec <code>git checkout feature_x</code>.</li>
-                            <li>Faire des modifications sur votre projet web, puis committer.</li>
-                            <li>Revenir à la branche principale <code>git checkout main</code>.</li>
+                            <li>À partir de votre projet précédent, créez une branche <code>featureX</code>.</li>
+                            <li>Basculer sur cette branche.</li>
+                            <li>Faire des modifications sur votre projet, puis committer ces changements.</li>
+                            <li>Revenir à la branche principale <code>main</code>.</li>
                             <li>Créer un tag de cette version : <code>git tag v1.0</code>. (<em>Bonus: Si vous voulez vous pouvez créer un tag annoté.</em>)</li>
-                            <li>Fusionner la branche : <code>git merge feature_x</code>.</li>
-                            <li>Supprimer la branche : <code>git branch -d feature_x</code>.</li>
-                            <li>Créer un dépôt distant sur GitHub.</li>
-                            <li>Relier le dépôt local au dépôt distant : <code>git remote add origin URL_DU_DEPO</code>.</li>
-                            <li>Envoyer les commits sur GitHub : <code>git push -u origin main</code>. (<em>Bonus: Que signifie ce <code>-u</code> ?</em>)</li>
+                            <li>Fusionner la branche <code>featureX</code>.</li>
+                            <li>Supprimer localement la branche <code>featureX</code>.</li>
                             <li>Envoyer les changements sur GitHub. Quelle commande utilisez-vous ?</li>
                             <li>Vérifier sur GitHub la présence du tag et des modifications.</li>
                             <li>Envoyer moi vos liens vers vos dépôts GitHub.</li>
@@ -397,51 +503,6 @@ git config --global user.email "votre.email@example.com"</code></pre>
             </section>
         </section>
 
-        <!-- Historique des branches -->
-        <section>
-            <section class="inner-section">
-                <div class="ch">
-                    <div class="item">
-                        <h2>Utiliser Git pour stocker du code à distance</h2>
-                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmlkaDZpM2d3OTJzdW1tbTAxdWJkaWMyZWhkM3V4a3FuNms5a3RmcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zhbrTTpmSCYog/giphy.gif" alt="">
-                    </div>
-                </div>
-            </section>
-            <section class="inner-section"> 
-                <div class="ch"> 
-                    <div class="item"> 
-                        <h2>Dépôts locaux et distants</h2> 
-                        <p> <strong>GitHub</strong> permet de stocker et partager son code sur Internet, pour collaborer facilement en équipe. </p> 
-                        <ul> 
-                            <li>Un <strong>dépôt local</strong> est sur ton ordinateur.</li> 
-                            <li>Un <strong>dépôt distant</strong> est hébergé sur GitHub (ou GitLab, Bitbucket...)</li> 
-                        </ul> 
-                        <h3>Pourquoi synchroniser ?</h3> 
-                        <ul> 
-                            <li>Partager tes modifications</li> 
-                            <li>Accéder au code de l’équipe</li> 
-                            <li>Travailler de plusieurs ordinateurs</li> 
-                        </ul> 
-                    </div> 
-                </div> 
-                <aside class="notes"> Souligner la différence locale/distant, introduire la motivation de GitHub. </aside> 
-            </section> 
-            <section class="inner-section"> 
-                <div class="ch"> 
-                    <div class="item"> 
-                        <h2>Commandes clés : lier et synchroniser</h2> 
-                        <p> <code>git remote add origin URL</code> : Connecte ton dépôt local à GitHub. </p> 
-                        <p> <code>git push</code> : Envoie tes commits locaux vers GitHub.</p> 
-                        <p> <code>git pull</code> : Récupère les dernières modifications de GitHub.</p> 
-                        <div style="margin-top: 2em;"> 
-                            <h3>⚠️ Travailler toujours à jour pour éviter les conflits ! ⚠️</h3> 
-                        </div> 
-                    </div> 
-                </div> 
-                <aside class="notes"> Faire une démo en direct ou expliquer chaque commande avec un vrai cas d’usage. </aside> 
-            </section> 
-        </section>
-
         <!-- Branching avancé -->
         <section> 
             <section class="inner-section">
@@ -455,7 +516,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section"> 
                 <div class="ch"> 
                     <div class="item"> 
-                        <h2>Branches et collaboration</h2> 
+                        <h2>🌲 Branches et collaboration</h2> 
                         <p><strong>Brancher</strong> = Travailler sur une nouvelle fonctionnalité sans toucher au code principal.</p> 
                         <ul> 
                             <li><strong>main/master</strong> : branche principale et stable</li> 
@@ -473,7 +534,7 @@ git config --global user.email "votre.email@example.com"</code></pre>
             <section class="inner-section"> 
                 <div class="ch"> 
                     <div class="item"> 
-                        <h2>Fusions et gestion des conflits</h2> 
+                        <h2>🫂 Fusions et gestion des conflits</h2> 
                         <p> <strong>Fusionner (merge)</strong> = Réunir plusieurs branches en une seule.<br/> <strong>Conflit</strong> = Deux personnes modifient la même ligne. </p> 
                         <h3>Comment gérer un conflit ?</h3> 
                         <ul> 
@@ -487,7 +548,86 @@ git config --global user.email "votre.email@example.com"</code></pre>
             </section> 
         </section>
 
-        <!-- TP03: Collaboration -->
+        <!-- TP04: Collaboration -->
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>TP</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>👨‍💻 TP04 : Merge et conflits</h2>
+                        <ol>
+                            <li>Deux élèves clonent le même projet. <code>featureX</code>.</li>
+                            <li>Élève A crée une branche <code>fixed-typo</code>, modifie des fichiers dans le projet, commit, et pousse cette branche.</li>
+                            <li>Élève B crée une branche <code>update-fonctions</code>, modifie les mêmes lignes des fichiers de son voisin (avec une autre correction), commit et pousse.</li>
+                            <li>Détectez un conflit en essayant de fusionner <code>update-fonctions</code> dans <code>main</code>.</li>
+                            <li>Récupérez la branche <code>main</code> localement et tentez la fusion pour forcer le conflit.</li>
+                            <li>Résolvez manuellement le conflit dans les fichiers concernés.</li>
+                            <li>Finalisez la fusion par un commit.</li>
+                            <li>Envoyer moi vos liens vers vos dépôts GitHub.</li>
+                        </ol>
+                    </div>
+                </div>
+                <aside class="notes">
+                    <p>Cette pratique cible la collaboration et l’intégration continue.</p>
+                    <p>Encourager les étudiants à pratiquer le branching pour bien maîtriser Git.</p>
+                    <p>Créer un tag annoté de cette version <code>git tag -a v1.0 -m "Version 1.0 stable"</code></p>
+                    <p>Envoyer les changements sur GitHub : <code>git push origin main --tags</code>.</p>
+                </aside>
+            </section>
+        </section>
+
+        <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Ne pas tout envoyer</h2>
+                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjc2aWtmNXkzeXRzY3pscmJjaGw5d3BhMjh2cmdtZmE5MjBhMnoxdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bHxxNE7lpALYgMVyyD/giphy.gif" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Le fichier .gitignore</h2>
+                        <p>
+                            <strong>Fonctionnement :</strong><br/>
+                            Liste les fichiers et dossiers que Git doit ignorer (ne pas suivre ni versionner).
+                        </p>
+                        <p>
+                            <strong>Intérêt :</strong><br/>
+                            Éviter de committer des fichiers temporaires, sensibles ou volumineux.
+                        </p>
+                        <h3>Exemple de contenu</h3>
+                        <pre><code data-trim>
+# Fichiers logs
+*.log
+
+# Dossier des dépendances Node.js
+node_modules/
+
+# Configuration IDE
+.vscode/
+
+# Fichiers d'environnement
+.env
+                        </code></pre>
+                        <p>
+                            <strong>Conseil :</strong> Toujours versionner un .gitignore adapté pour garder un dépôt propre.
+                        </p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Expliquer que c’est un fichier texte simple influant grandement sur la propreté et la sécurité du dépôt.
+                </aside>
+            </section>
+        </section>
+
 
         <!-- Manipulation d'historique -->
          <section>
@@ -545,7 +685,60 @@ git config --global user.email "votre.email@example.com"</code></pre>
         </section>
 
         <section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h2>Sauvegarder / Restaurer / Appliquer</h2>
+                        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmplNXRvODcyam1lMmFxOXZuaDljYWMxa2ZraHZvbHNjcDI5eWZxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/du9tUy0lntYsqGF2Ye/giphy.gif" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="inner-section">
+                <div class="ch">
+                    <div class="item">
+                        <h3>La force de git stash</h3>
+                        <ul>
+                            <li>
+                                <strong>git stash</strong>
+                                <pre><code data-trim>
+        git stash
+                                </code></pre>
+                                Met de côté temporairement tes modifications non validées.
+                            </li>
+                            <li>
+                                <strong>git stash list</strong>
+                                <pre><code data-trim>
+        git stash list
+                                </code></pre>
+                                Affiche toutes les sauvegardes en attente (stash).
+                            </li>
+                            <li>
+                                <strong>git stash apply</strong>
+                                <pre><code data-trim>
+        git stash apply stash@{0}
+                                </code></pre>
+                                Réapplique un stash spécifique sans le supprimer de la liste.
+                            </li>
+                            <li>
+                                <strong>git stash pop</strong>
+                                <pre><code data-trim>
+        git stash pop
+                                </code></pre>
+                                Réapplique et supprime le dernier stash de la liste.
+                            </li>
+                        </ul>
+                        <p>
+                            <strong>Astuce&nbsp;:</strong> Utilise <code>git stash</code> pour mettre tes changements en pause et basculer sur une autre tâche sans stress&nbsp;!
+                        </p>
+                    </div>
+                </div>
+                <aside class="notes">
+                    Démontrer en situation réelle, par exemple lors d’une bascule urgente sur une correction en production.
+                </aside>
+            </section>
+        </section>
 
+        <section>
             <section class="inner-section">
                 <div class="ch">
                     <div class="item">
